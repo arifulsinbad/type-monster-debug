@@ -91,7 +91,9 @@ body {
   font-weight: 700;
 }
 .inactive {
+
   border: 2px solid white !important;
+  
 }
 .hidden {
   display: none;
