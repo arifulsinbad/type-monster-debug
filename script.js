@@ -39,6 +39,7 @@ const typeController = (e) => {
   }
 
   userText += newLetter;
+ 
 
   const newLetterCorrect = validate(newLetter);
 
@@ -46,6 +47,7 @@ const typeController = (e) => {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
+    errorCount++;
   }
 
   // check if given question text is equal to user typed text
@@ -94,6 +96,8 @@ const gameOver = () => {
   display.classList.add("inactive");
 };
 
+
+
 const closeModal = () => {
   modalBackground.classList.toggle("hidden");
   resultModal.classList.toggle("hidden");
@@ -101,10 +105,12 @@ const closeModal = () => {
 
 const start = () => {
   // If already started, do not start again
+ 
   if (startTime) return;
 
   let count = 3;
   countdownOverlay.style.display = "flex";
+ 
 
   const startCountdown = setInterval(() => {
     countdownOverlay.innerHTML = `${count}`;
