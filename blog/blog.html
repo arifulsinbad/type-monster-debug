@@ -7,7 +7,7 @@
 
  <title>Blog</title>
  <style>
-  h
+  
  </style>
 </head>
 <body>
@@ -21,7 +21,18 @@
    <h2>What is difference between global scope and block scope?</h2>
    <p>In a browser environment, the global scope is controlled by the window object while in Node. js, it's controlled by the global object. Block scopes are what you get when you use if statements, for statements, and the like.</p>
   </div>
-
+  <div>
+   <h2>How does the event loop works?</h2>
+   <p>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
+  </div>
+  <div>
+   <h2>5 Tips to Handle undefined in JavaScript</h2>
+   <p>1.The standard clearly defines that you will receive undefined when accessing uninitialized variables, non-existing object properties, non-existing array elements, and alike.</p>
+   <p>2.myVariable is declared and not yet assigned with a value. Accessing the variable evaluates to undefined.</p>
+   <p>3.When accessing a non-existing object property, JavaScript returns undefined.</p>
+   <p>4.You get undefined when accessing an array element with an out of bounds index.</p>
+   <p>5.What is the main difference between undefined and null? Both special values imply an empty state.</p>
+  </div>
  </section>
  
 </body>
